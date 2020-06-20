@@ -1,0 +1,211 @@
+/*main styles*/
+ 
+* {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    opacity: .9;
+    text-align: center;
+    background-color: black;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0px;
+}
+
+
+/* header*/
+
+header  {
+    height: 60px;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid seashell;
+    z-index: 10;
+    position: fixed;
+    margin: 0px
+}
+
+img {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+nav {
+    float: right;
+    margin-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+ul {
+list-style: none;
+align-items: center;
+margin: auto;
+display: flex;
+margin: 0px;
+}
+
+li {
+    margin: 0px 10px;
+}
+
+/* Banner*/
+
+.banner {
+    background-image: url(./resources/images/img-mission-background.jpg);
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right:10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 60px;
+    margin-bottom: 60px
+}
+
+.banner .container {
+    width: 100%;
+}
+
+/*tea of the month*/
+
+.content {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    }
+
+#tea_month {
+}
+
+.img_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.img_container img {
+    min-height: 200px;
+    min-width: 300px;
+}
+
+.image p {
+    height: 16px;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Locations*/
+
+.locations {
+    height: 500px;
+    width: 100%;
+    background-image: url(./resources/images/img-locations-background.jpg);
+    background-size: cover;
+    text-align: center;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locations h2 {
+    background: none;
+    padding-top: 120px;
+    margin-bottom: 16px;
+}
+.locations .container {
+    display: flex;
+    justify-content: center;
+    background: none;
+    align-content: center;
+    width: 100%;
+
+}
+
+.location_address {
+    height: auto;
+    min-width: 300px;
+    margin: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+}
+
+/*footer*/
+
+footer {
+    height: 200px;
+    margin: .0px 20px;
+}
+
+footer p {
+    text-align: left;
+    font-size: .75rem;
+    padding-top: 40px;
+}
+
+@media screen and (max-width:800px){
+    .locations .container {
+        flex-wrap: wrap;
+    }
+
+    .locations {
+        height: auto;
+    }
+
+    ul {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        width: 100%;
+        opacity: 10;
+        margin-right: 0px;
+        justify-content: center;
+    }
+
+    header {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    img {
+        height: 50px;
+        width: auto;
+    }
+
+
+}
